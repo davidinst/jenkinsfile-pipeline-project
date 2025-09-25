@@ -5,6 +5,7 @@ pipeline {
             steps {
                 echo 'Compiling java source code'
                 sh 'javac Hello.java'
+                echo 'Version 2'
             }
         }
 

@@ -12,6 +12,7 @@ pipeline {
         stage('test') {
             steps {
                 echo "This is stage 2"
+                echo "Triggered by GitHub"
                 
             }
         }

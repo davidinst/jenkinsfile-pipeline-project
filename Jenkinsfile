@@ -4,17 +4,10 @@ pipeline {
         stage('build') {
             steps {
                 echo "Clarusway_Way to Reinvent Yourself"
-                sh 'echo using shell within Jenkinsfile'
-                echo 'not using shell in the Jenkinsfile'
+                sh 'python3 --version'
+                sh 'python3 pipeline.py'
             }
         }
-        
-        stage('test') {
-            steps {
-                echo "This is stage 2"
-                echo "Triggered by GitHub"
-                
-            }
-        }
+
     }
 }

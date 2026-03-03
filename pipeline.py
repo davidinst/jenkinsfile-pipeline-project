@@ -1,1 +1,1 @@
-print("My first python job to be run via Jenkinsfile V6")
+print('My first python job which is run within Jenkinsfile.')

@@ -4,11 +4,17 @@ pipeline {
 
     stages {
 
-        stage ("run"){
+        stage ("build/compile"){
             steps {
-                echo 'Welcome to Jenkins'
-                sh 'python3 --version'
-                sh 'python3 pipeline.py'
+                echo 'Compiling teh Java source code'
+                sh 'javac Hello.java'
+            }
+        }
+
+        stage ('run'){
+            steps {
+                echo 'Running teh compiled Java code...'
+                sh 'java Hello'
             }
         }
     }

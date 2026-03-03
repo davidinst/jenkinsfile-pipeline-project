@@ -6,7 +6,7 @@ pipeline {
 
         stage ("build/compile"){
             steps {
-                echo 'Compiling teh Java source code'
+                echo 'Version 2 ---- Compiling teh Java source code'
                 sh 'javac Hello.java'
             }
         }

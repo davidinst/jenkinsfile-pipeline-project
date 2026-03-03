@@ -1,11 +1,13 @@
 pipeline {
+
     agent any
+
     stages {
-        stage('run') {
+
+        stage ("build"){
             steps {
-                echo 'Welcome to Jenkins'
-                sh 'python3 --version'
-                sh 'python3 pipeline.py'
+                echo 'This pipeline script is triggered via GitHub webhook'
+                sh 'echo integrating Jenkins pipeline via bla bla bla'
             }
         }
     }
